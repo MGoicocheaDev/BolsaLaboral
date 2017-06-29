@@ -40,7 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enum\Genero.cs" />
+    <Compile Include="Enum\TipoDireccion.cs" />
+    <Compile Include="Enum\TipoDocumento.cs" />
+    <Compile Include="Model\AreaEstudio.cs" />
+    <Compile Include="Model\Domicilio.cs" />
+    <Compile Include="Model\EstadoFormacion.cs" />
+    <Compile Include="Model\Formacion.cs" />
+    <Compile Include="Model\Pais.cs" />
     <Compile Include="Model\Persona.cs" />
+    <Compile Include="Model\TipoFormacion.cs" />
+    <Compile Include="Model\Ubigeo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

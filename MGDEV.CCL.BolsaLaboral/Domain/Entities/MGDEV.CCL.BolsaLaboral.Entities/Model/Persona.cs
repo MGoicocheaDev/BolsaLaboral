@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MGDEV.CCL.BolsaLaboral.Entities.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,13 +12,16 @@ namespace MGDEV.CCL.BolsaLaboral.Entities.Model
         public long PersonaId { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
-        public string Correo { get; set; }
         public DateTime FechaNacimiento { get; set; }
-        public string Contraseña { get; set; }
-        public string Token { get; set; }
-        public DateTime CreateDate { get; set; }
-        public DateTime UpdateDate { get; set; }
-        
-
+        public TipoDocumento TipoDocumento { get; set; }
+        public string NumeroDocumento { get; set; }
+        public byte EstadoCivil { get; set; }
+        public Genero Genero { get; set; }
+        public int PaisId { get; set; }
+        public Pais Pais { get; set; }
+        public long DomicilioId { get; set; }
+        public Domicilio Domicilio { get; set; }
+        public DateTime FechaCreacion { get; set; }
+        public DateTime FechaActualizacion { get; set; }
     }
 }
