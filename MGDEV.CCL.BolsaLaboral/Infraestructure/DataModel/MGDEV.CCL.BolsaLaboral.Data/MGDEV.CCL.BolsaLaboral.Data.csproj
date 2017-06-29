@@ -51,7 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Migrations\201706260441388_addPersona.cs" />
     <Compile Include="Migrations\201706260441388_addPersona.Designer.cs">
       <DependentUpon>201706260441388_addPersona.cs</DependentUpon>
