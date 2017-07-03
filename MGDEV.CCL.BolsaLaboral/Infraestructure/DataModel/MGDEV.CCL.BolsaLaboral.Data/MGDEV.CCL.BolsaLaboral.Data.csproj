@@ -51,9 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201706260441388_addPersona.cs" />
-    <Compile Include="Migrations\201706260441388_addPersona.Designer.cs">
-      <DependentUpon>201706260441388_addPersona.cs</DependentUpon>
+    <Compile Include="Migrations\201707032007396_update-model.cs" />
+    <Compile Include="Migrations\201707032007396_update-model.Designer.cs">
+      <DependentUpon>201707032007396_update-model.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\EFBolsaLaboralContext.cs" />
@@ -70,8 +70,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201706260441388_addPersona.resx">
-      <DependentUpon>201706260441388_addPersona.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201707032007396_update-model.resx">
+      <DependentUpon>201707032007396_update-model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

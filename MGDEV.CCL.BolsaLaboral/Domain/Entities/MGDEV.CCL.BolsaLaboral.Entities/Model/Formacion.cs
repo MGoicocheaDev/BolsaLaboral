@@ -16,8 +16,8 @@ namespace MGDEV.CCL.BolsaLaboral.Entities.Model
         public byte EstadoFormacionId { get; set; }
         public EstadoFormacion EstadoFormacion { get; set; }
         public string Titulo { get; set; }
-        public int AreaEstudioId { get; set; }
-        public AreaEstudio AreaEstudio { get; set; }
+        public int AreaFormacionId { get; set; }
+        public AreaFormacion AreaFormacion { get; set; }
         public string Institucion { get; set; }
         public byte MesInicio { get; set; }
         public byte AnioInicio { get; set; }
@@ -25,6 +25,8 @@ namespace MGDEV.CCL.BolsaLaboral.Entities.Model
         public byte AnioFin { get; set; }
         public Boolean Actual { get; set; }
         public Decimal Promedio { get; set; }
+        public int PaisId { get; set; }
+        public Pais Pais { get; set; }
 
         public DateTime FechaCreacion { get; set; }
         public DateTime FechaActualizacion { get; set; }

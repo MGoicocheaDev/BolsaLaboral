@@ -41,12 +41,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enum\Genero.cs" />
+    <Compile Include="Enum\NivelExperiencia.cs" />
+    <Compile Include="Enum\TipoContacto.cs" />
     <Compile Include="Enum\TipoDireccion.cs" />
     <Compile Include="Enum\TipoDocumento.cs" />
-    <Compile Include="Model\AreaEstudio.cs" />
+    <Compile Include="Enum\TipoImagen.cs" />
+    <Compile Include="Model\ActividadEmpresa.cs" />
+    <Compile Include="Model\AreaFormacion.cs" />
+    <Compile Include="Model\AreaLaboral.cs" />
+    <Compile Include="Model\ContactoPersona.cs" />
     <Compile Include="Model\Domicilio.cs" />
     <Compile Include="Model\EstadoFormacion.cs" />
+    <Compile Include="Model\ExperienciaLaboral.cs" />
     <Compile Include="Model\Formacion.cs" />
+    <Compile Include="Model\Imagen.cs" />
     <Compile Include="Model\Pais.cs" />
     <Compile Include="Model\Persona.cs" />
     <Compile Include="Model\TipoFormacion.cs" />

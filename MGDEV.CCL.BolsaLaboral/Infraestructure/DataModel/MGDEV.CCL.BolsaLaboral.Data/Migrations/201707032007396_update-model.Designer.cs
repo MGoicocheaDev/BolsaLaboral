@@ -7,13 +7,13 @@ namespace MGDEV.CCL.BolsaLaboral.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class addPersona : IMigrationMetadata
+    public sealed partial class updatemodel : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addPersona));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(updatemodel));
         
         string IMigrationMetadata.Id
         {
-            get { return "201706260441388_addPersona"; }
+            get { return "201707032007396_update-model"; }
         }
         
         string IMigrationMetadata.Source

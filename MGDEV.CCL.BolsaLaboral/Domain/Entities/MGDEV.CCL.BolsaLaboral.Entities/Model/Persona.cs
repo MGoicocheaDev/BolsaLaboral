@@ -21,7 +21,15 @@ namespace MGDEV.CCL.BolsaLaboral.Entities.Model
         public Pais Pais { get; set; }
         public long DomicilioId { get; set; }
         public Domicilio Domicilio { get; set; }
+        public string Resumen { get; set; }
+
+        public long ImagenId { get; set; }
+        public Imagen Imagen { get; set; }
         public DateTime FechaCreacion { get; set; }
         public DateTime FechaActualizacion { get; set; }
+
+        public List<Formacion> Estudios { get; set; }
+        public List<ExperienciaLaboral> ExperienciaLaborales { get; set; }
+        public List<ContactoPersona> DatosContacto { get; set; }
     }
 }
