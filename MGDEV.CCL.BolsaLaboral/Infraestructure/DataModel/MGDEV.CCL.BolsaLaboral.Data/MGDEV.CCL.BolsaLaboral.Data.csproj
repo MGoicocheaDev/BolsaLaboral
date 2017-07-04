@@ -51,11 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201707032007396_update-model.cs" />
-    <Compile Include="Migrations\201707032007396_update-model.Designer.cs">
-      <DependentUpon>201707032007396_update-model.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\Seed\AreaLaboraSeeder.cs" />
+    <Compile Include="Migrations\Seed\UbigeoSeeder.cs" />
     <Compile Include="Model\EFBolsaLaboralContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,11 +66,6 @@
       <Project>{b59e5fab-0aed-414d-93fa-16cc1b9c0917}</Project>
       <Name>MGDEV.CCL.BolsaLaboral.Entities</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201707032007396_update-model.resx">
-      <DependentUpon>201707032007396_update-model.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

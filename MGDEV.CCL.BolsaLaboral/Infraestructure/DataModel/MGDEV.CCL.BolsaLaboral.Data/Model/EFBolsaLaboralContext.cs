@@ -203,7 +203,7 @@ namespace MGDEV.CCL.BolsaLaboral.Data.Model
                 .IsOptional();
             #endregion
 
-            #region ImagenPersona
+            #region Imagen
 
             modelBuilder.Entity<Imagen>()
                 .Property(x => x.Nombre)
@@ -219,6 +219,39 @@ namespace MGDEV.CCL.BolsaLaboral.Data.Model
                 .HasColumnType("image")
                 .IsRequired();
             #endregion
+
+            #region ContactoEmpresa
+            modelBuilder.Entity<ContactoEmpresa>()
+                .Property(x => x.Contacto)
+                .HasMaxLength(400)
+                .IsRequired();
+
+            modelBuilder.Entity<ContactoEmpresa>()
+                .Property(x => x.FechaActualizacion)
+                .IsOptional();
+            #endregion
+
+            #region Empresa
+            modelBuilder.Entity<Empresa>()
+                .Property(x => x.RUC)
+                .HasMaxLength(15)
+                .IsRequired();
+
+            modelBuilder.Entity<Empresa>()
+                .Property(x => x.RazonSocial)
+                .HasMaxLength(300)
+                .IsRequired();
+
+            modelBuilder.Entity<Empresa>()
+                .Property(x => x.Descripcion)
+                .HasMaxLength(600)
+                .IsRequired();
+
+            modelBuilder.Entity<Empresa>()
+                .Property(x => x.FechaActualizacion)
+                .IsOptional();
+            #endregion
+
         }
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 
@@ -235,9 +268,11 @@ namespace MGDEV.CCL.BolsaLaboral.Data.Model
         public virtual DbSet<AreaFormacion> AreaFormacion { get; set; }
         public virtual DbSet<ExperienciaLaboral> ExperienciaLaboral { get; set; }
         public virtual DbSet<AreaLaboral> AreaLaboral { get; set; }
-        public virtual DbSet<ActividadEmpresa> ActividadEmpresa { get; set; }
         public virtual DbSet<ContactoPersona> ContactoPersona { get; set; }
         public virtual DbSet<Imagen> Imagen { get; set; }
+
+        public virtual DbSet<Empresa> Empresa { get; set; }
+        public virtual DbSet<ContactoEmpresa> ContactoEmpresa { get; set; }
 
 
     }

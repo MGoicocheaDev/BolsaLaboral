@@ -46,11 +46,12 @@
     <Compile Include="Enum\TipoDireccion.cs" />
     <Compile Include="Enum\TipoDocumento.cs" />
     <Compile Include="Enum\TipoImagen.cs" />
-    <Compile Include="Model\ActividadEmpresa.cs" />
     <Compile Include="Model\AreaFormacion.cs" />
     <Compile Include="Model\AreaLaboral.cs" />
+    <Compile Include="Model\ContactoEmpresa.cs" />
     <Compile Include="Model\ContactoPersona.cs" />
     <Compile Include="Model\Domicilio.cs" />
+    <Compile Include="Model\Empresa.cs" />
     <Compile Include="Model\EstadoFormacion.cs" />
     <Compile Include="Model\ExperienciaLaboral.cs" />
     <Compile Include="Model\Formacion.cs" />

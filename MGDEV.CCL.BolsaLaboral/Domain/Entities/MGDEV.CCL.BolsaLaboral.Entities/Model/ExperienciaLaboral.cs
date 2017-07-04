@@ -13,8 +13,7 @@ namespace MGDEV.CCL.BolsaLaboral.Entities.Model
         public long PersonaId { get; set; }
         public Persona Persona { get; set; }
         public string Empresa { get; set; }
-        public int ActividadEmpresaId { get; set; }
-        public ActividadEmpresa ActividadEmpresa { get; set; }
+        public string ActividadEmpresa { get; set; }
         public string Puesto { get; set; }
         public NivelExperiencia NivelExperiencia { get; set; }
         public int PaisId { get; set; }
