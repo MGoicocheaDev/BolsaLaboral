@@ -24,6 +24,7 @@ namespace MGDEV.CCL.BolsaLaboral.Data.Model
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            //modelBuilder.HasDefaultSchema("Job");
 
             #region Persona
 
@@ -83,8 +84,18 @@ namespace MGDEV.CCL.BolsaLaboral.Data.Model
             #region Pais
 
             modelBuilder.Entity<Pais>()
-                .Property(x => x.Nombre)
+                .Property(x => x.DisplayName)
                 .HasMaxLength(100)
+                .IsRequired();
+
+            modelBuilder.Entity<Pais>()
+                .Property(x => x.ISOCurrencySymbol)
+                .HasMaxLength(10)
+                .IsRequired();
+
+            modelBuilder.Entity<Pais>()
+                .Property(x => x.TwoLetterISO)
+                .HasMaxLength(5)
                 .IsRequired();
 
             #endregion
@@ -270,7 +281,6 @@ namespace MGDEV.CCL.BolsaLaboral.Data.Model
         public virtual DbSet<AreaLaboral> AreaLaboral { get; set; }
         public virtual DbSet<ContactoPersona> ContactoPersona { get; set; }
         public virtual DbSet<Imagen> Imagen { get; set; }
-
         public virtual DbSet<Empresa> Empresa { get; set; }
         public virtual DbSet<ContactoEmpresa> ContactoEmpresa { get; set; }
 

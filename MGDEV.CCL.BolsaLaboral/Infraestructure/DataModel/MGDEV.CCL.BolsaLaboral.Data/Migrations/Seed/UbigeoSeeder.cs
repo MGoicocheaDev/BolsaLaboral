@@ -10,16 +10,10 @@ using MGDEV.CCL.BolsaLaboral.Entities.Model;
 
 namespace MGDEV.CCL.BolsaLaboral.Data.Migrations.Seed
 {
-    public class UbigeoSeeder
+    public static class UbigeoSeeder
     {
-        private EFBolsaLaboralContext _context;
-        public UbigeoSeeder(EFBolsaLaboralContext context)
-        {
-            _context = context;
-
-        }
-
-        public void addUbigeo()
+        
+        public static void addUbigeo(EFBolsaLaboralContext _context)
         {
             #region Departamentos
             _context.Ubigeo.AddOrUpdate(

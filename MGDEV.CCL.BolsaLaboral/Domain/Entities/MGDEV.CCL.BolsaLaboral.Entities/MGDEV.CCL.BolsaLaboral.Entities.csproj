@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enum\EstadoCivil.cs" />
     <Compile Include="Enum\Genero.cs" />
     <Compile Include="Enum\NivelExperiencia.cs" />
     <Compile Include="Enum\TipoContacto.cs" />

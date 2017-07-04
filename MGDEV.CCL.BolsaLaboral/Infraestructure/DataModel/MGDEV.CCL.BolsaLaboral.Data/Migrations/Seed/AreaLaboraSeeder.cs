@@ -9,16 +9,10 @@ using System.Threading.Tasks;
 
 namespace MGDEV.CCL.BolsaLaboral.Data.Migrations.Seed
 {
-    public class AreaLaboraSeeder
+    public static class AreaLaboraSeeder
     {
-        private EFBolsaLaboralContext _context;
-        public AreaLaboraSeeder(EFBolsaLaboralContext context)
-        {
-            _context = context;
 
-        }
-
-        public void addAreaLaboral()
+        public static void addAreaLaboral(EFBolsaLaboralContext _context)
         {
             _context.AreaLaboral.AddOrUpdate(
                 new AreaLaboral { AreaLaboralId = 1, Nombre = "Administración, Contabilidad y Finanzas" },

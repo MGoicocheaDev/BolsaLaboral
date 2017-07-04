@@ -9,7 +9,7 @@ namespace MGDEV.CCL.BolsaLaboral.Data.Migrations
 
     internal sealed class Configuration : DbMigrationsConfiguration<EFBolsaLaboralContext>
     {
-        private UbigeoSeeder ubigeoSeeder;
+        
 
         public Configuration()
         {
@@ -18,8 +18,16 @@ namespace MGDEV.CCL.BolsaLaboral.Data.Migrations
 
         protected override void Seed(EFBolsaLaboralContext context)
         {
-            ubigeoSeeder = new UbigeoSeeder(context);
-            ubigeoSeeder.addUbigeo();
+            //UbigeoSeeder.addUbigeo(context);
+            //AreaLaboraSeeder.addAreaLaboral(context);
+            //AreaFormacionSeeder.addAreaFormacion(context);
+            //PaisSeeder.addPais(context);
+            //EstadoFormacionSeeder.addEstadoFormacion(context);
+            //TipoFormacionSeeder.addTipoFormacion(context);
+            //DomicilioSeeder.addDomicilio(context);
+            //ImagenSeeder.addImage(context);
+            //PersonaSeeder.addPersona(context);
+            ContactoPersonaSeeder.addContactoPersona(context);
         }
     }
 }

@@ -15,7 +15,7 @@ namespace MGDEV.CCL.BolsaLaboral.Entities.Model
         public DateTime FechaNacimiento { get; set; }
         public TipoDocumento TipoDocumento { get; set; }
         public string NumeroDocumento { get; set; }
-        public byte EstadoCivil { get; set; }
+        public EstadoCivil EstadoCivil { get; set; }
         public Genero Genero { get; set; }
         public int PaisId { get; set; }
         public Pais Pais { get; set; }
